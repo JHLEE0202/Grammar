@@ -8,12 +8,12 @@ public class Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       int n1 = 8;
-       int n2 = 9;
-       int answer;
-       answer = n1 + n2;
-       Debug.Log(answer);
-        
+      string str1 = "happy";
+      string str2 = "birth day";
+      string message;
+
+      message = str1 + str2;
+      Debug.Log (message);
     }
 
     // Update is called once per frame
