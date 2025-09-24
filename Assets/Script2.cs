@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Script2 : MonoBehaviour
 {
-    public int inch;
-    private float cm;
     // Start is called before the first frame update
     void Start()
     {
-      cm = inch*2.54f;
-      Debug.Log(inch + "인치는" + cm + "입니다.");
+      Player Myplayer = new Player();
+      Myplayer.Attack();
+      Myplayer.Damage(35);
     }
 
     // Update is called once per frame
@@ -18,4 +17,21 @@ public class Script2 : MonoBehaviour
     {
         
     }
+    // 클래스는 비슷한 속성, 특성, 멤버 => 변수, 매서드
+    public class Player 
+    {
+      //공격
+      private int HP = 100;
+      private int POWER = 50;
+      public void Attack()
+      {
+        Debug.Log(this.POWER + "데미지를 입혔다");
+      }
+      public void Damage(int Damage)
+      {
+        this.HP = Damage;
+        Debug.Log(Damage + "데미지를 입혔다");
+      }
+    }
+    
 }
