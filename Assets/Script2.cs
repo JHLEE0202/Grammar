@@ -29,7 +29,7 @@ public class Script2 : MonoBehaviour
       }
       public void Damage(int Damage)
       {
-        this.HP = Damage;
+        this.HP -= Damage;
         Debug.Log(Damage + "데미지를 입혔다");
       }
     }
