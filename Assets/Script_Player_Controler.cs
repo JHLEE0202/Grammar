@@ -5,6 +5,8 @@ using UnityEngine;
 public class Script_Player_Controler : MonoBehaviour
 {
     public float speed = 10.0f; //속도의 값
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,8 @@ public class Script_Player_Controler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
         if (Input.GetKey(KeyCode.LeftArrow) == true)
         {
             transform.Translate (Vector3.left * speed * Time.deltaTime);
@@ -26,5 +30,7 @@ public class Script_Player_Controler : MonoBehaviour
         {
             transform.Translate (Vector3.up * speed * Time.deltaTime);
         }
+
+        
     }
 }
